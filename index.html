@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grocery Website</title>
+
+	<link rel="icon" type="image/icon" href="image/favicon.jpg">
+
+	<!-- code for fontawsome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- link css page -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- swiper cdn link -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> 
+
+</head>
+<body>
+
+    <!-- header section -->
+	<header class="header">
+		<a href="#" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true"></i> GROCERY </a>
+
+		<nav class="navbar">
+			<a href="#home">Home</a>
+			<a href="#features">Features</a>
+			<a href="#products">Products</a>
+			<a href="#categories">Categories</a>
+			<a href="#review">Review</a>
+			<a href="#blog">Blog</a>
+		</nav>
+
+		<div class="icons">
+			<div class="fa fa-bars" id="menu-btn"></div>
+			<div class="fa fa-search" id="search-btn"></div>
+			<div class="fa fa-shopping-cart" id="cart-btn"></div>
+			<div class="fa fa-user" id="login-btn"></div>
+		</div>
+
+		<form class="search-form">
+			<input type="search" id="search-box" placeholder="search here">
+			<label for="search-form" class="fa fa-search"></label>
+		</form>
+
+		<div class="shopping-cart">
+			<div class="box">
+				<i class="fa fa-trash"></i>
+				<img src="image/watermelon.jpg">
+				<div class="content">
+					<h3> Watermelon </h3>
+					<span class="price"> $5/- </span>
+					<span class="quantity"> Qty:1 </span>
+				</div>
+			</div>
+
+			<div class="box">
+				<i class="fa fa-trash"></i>
+				<img src="image/onion.jpg">
+				<div class="content">
+					<h3> Onion </h3>
+					<span class="price"> $3.99/- </span>
+					<span class="quantity"> Qty:1Kg </span>
+				</div>
+			</div>
+
+			<div class="box">
+				<i class="fa fa-trash"></i>
+				<img src="image/chiken.jpg">
+				<div class="content">
+					<h3> Chiken </h3>
+					<span class="price"> $80/- </span>
+					<span class="quantity"> Qty:1 </span>
+				</div>
+			</div>
+
+			<div class="total"> Total: 88.99/- </div>
+			  <a href="#" class="btn">Checkout</a>
+		    </div>
+
+		    <form action="#" class="login-form">
+		    	<h3> Login Now </h3>
+		    	<input type="email" placeholder="enter email" class="box">
+		    	<input type="password" placeholder="enter password" class="box">
+
+		    	<p>Forgot Password <a href="#">Click here</a></p>
+		    	<p>Don't have account <a href="#">Create now</a></p>
+
+		    	<input type="submit" value="login" class="btn">
+		    </form>
+	</header>
+
+	<!-- banner section -->
+
+	<section class="home" id="home">
+		<div class="content">
+			<h3>Fresh and organic products</h3>
+			<p> In designating an exclusive section for organics and naturals, use unique overhead banners and header sets. According to the National Grocers Association (NGA), using green to brand the section emphasizes natural. </p>
+
+			<a href="#" class="btn">Shop Now</a>
+		</div>
+	</section>
+
+	<!-- features section -->
+
+	<section class="features" id="features">
+		<h1 class="heading"><span>Features</span></h1>
+
+		<div class="box-container">
+			<div class="box">
+				<img src="image/feature-1.jpg">
+				<h3>Fresh And Organic</h3>
+				<p> Organic food is the product of an agricultural system of farming. </p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+
+			<div class="box">
+				<img src="image/feature-2.jpg">
+				<h3>Free Delivery</h3>
+				<p>the delivery of mail directly to the recipient's address without charge to the recipient. </p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+
+			<div class="box">
+				<img src="image/feature-3.webp">
+				<h3>Easy Payment</h3>
+				<p>Customers can do payments via debit or credit card, cash on delivery or online. </p>
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- products section -->
+
+	 <section class="products" id="products">
+		<h1 class="heading"><span>Products</span></h1>
+
+		 <div class="swiper product-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide box">
+					<img src="image/product-1.png">
+					<h1>fresh avacado</h1>
+					<div class="price"> $10.99/- - $14.99/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="#" class="btn">Add to cart</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-5.webp">
+					<h1>fresh capsium</h1>
+					<div class="price"> $4.99/- - $7.99/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+					<a href="#" class="btn">Add to cart</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-2.png">
+					<h1>fresh apple</h1>
+					<div class="price"> $14.99/- - 19.99/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+					<a href="#" class="btn">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+				<div class="swiper product-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide box">
+					<img src="image/product-3.jpg">
+					<h1>fresh potato</h1>
+					<div class="price"> $9.99/- - $11.99/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="#" class="btn">Add to cart</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-4.jpg">
+					<h1>fresh carrot</h1>
+					<div class="price"> $5.99/- - $7.99/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="#" class="btn">Add to cart</a>
+				</div>
+
+
+				<div class="swiper-slide box">
+					<img src="image/product-7.png">
+					<h1>fresh stawberry</h1>
+					<div class="price"> $9.99/- - $13.99/-</div>
+					<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+					<a href="#" class="btn">Add to cart</a>
+				</div>
+			</div>
+		</div> 
+
+
+ <!-- <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div> -->
+
+
+	</section>
+
+  <!-- categories section -->
+
+  <section class="categories" id="categories">
+    <h1 class="heading"><span>Categories</span></h1>
+
+		<div class="box-container">
+			<div class="box">
+				<img src="image/categories-1.png">
+				<h3>Vegitables</h3>
+				<p> Upto 50% off </p>
+				<a href="#" class="btn">Shop Now</a>
+			</div>
+
+			<div class="box">
+				<img src="image/categories-2.png">
+				<h3>Fruits</h3>
+				<p>Upto 45% off </p>
+				<a href="#" class="btn">Shop Now</a>
+			</div>
+
+			<div class="box">
+				<img src="image/categories-3.png">
+				<h3>Dairy Products</h3>
+				<p>Upto 25% off </p>
+				<a href="#" class="btn">Shop Now</a>
+			</div>
+
+			<div class="box">
+				<img src="image/catrgories-4.jpg">
+				<h3>Fresh Meat</h3>
+				<p>Upto 30% off </p>
+				<a href="#" class="btn">Shop Now</a>
+			</div>
+		</div>
+  </section>
+
+ <!-- customer review -->
+
+
+  <section class="review" id="review">
+    <h1 class="heading"><span>Customer Review</span></h1>
+    <div class="swiper review-slider">
+    	<div class="swiper-wrapper">
+    		<div class="swiper-slide box">
+    			<img src="image/pic-1.jpg">
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    			<h3>Samantha barber</h3>
+    			<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+    		</div>
+
+    		<div class="swiper-slide box">
+    			<img src="image/pic-2.jpg">
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    			<h3>Jhon Miller</h3>
+    			<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+    		</div>
+
+
+    		<div class="swiper-slide box">
+    			<img src="image/pic-3.jpg">
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    			<h3>Justin stevi</h3>
+    			<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+    		</div>
+
+
+    		<div class="swiper-slide box">
+    			<img src="image/pic-4.jpg">
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    			<h3>Rachel jackson</h3>
+    			<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+    		</div>
+
+
+    		<div class="swiper-slide box">
+    			<img src="image/pic-5.webp">
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    			<h3>Jonny Augstin</h3>
+    			<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
+    		</div>
+
+
+    		<div class="swiper-slide box">
+    			<img src="image/pic-6.jpg">
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    			<h3>Charla Trump</h3>
+    			<div class="stars">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half"></i>
+					</div>
+    		</div>
+    	</div>
+    </div>
+</section>
+
+<!-- blogs section -->
+
+
+  <section class="blog" id="blog">
+    <h1 class="heading"><span>Blogs</span></h1>
+
+    <div class="box-container">
+    	<div class="box">
+    		<img src="image/blog-1.webp">
+    		<div class="content">
+    			<div class="icons">
+    				<a href="#"><i class="fa fa-user">By User</i></a>
+    				<a href="#"><i class="fa fa-calendar">1st May 2022</i></a>
+    			</div>
+    			<h3>Fresh and Organic Vegitables and Fruits</h3>
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    			<a href="#" class="btn">Read More</a>
+    		</div>
+    	</div>
+
+    	<div class="box">
+    		<img src="image/blog-2.jpg">
+    		<div class="content">
+    			<div class="icons">
+    				<a href="#"><i class="fa fa-user">By User</i></a>
+    				<a href="#"><i class="fa fa-calendar">1st May 2022</i></a>
+    			</div>
+    			<h3>Fresh and Organic Vegitables and Fruits</h3>
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    			<a href="#" class="btn">Read More</a>
+    		</div>
+    	</div>
+
+    	<div class="box">
+    		<img src="image/blog-3.jpg">
+    		<div class="content">
+    			<div class="icons">
+    				<a href="#"><i class="fa fa-user">By User</i></a>
+    				<a href="#"><i class="fa fa-calendar">1st May 2022</i></a>
+    			</div>
+    			<h3>Fresh and Organic Vegitables and Fruits</h3>
+    			<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    			<a href="#" class="btn">Read More</a>
+    		</div>
+    	</div>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+       <section class="footer">
+       	<div class="box-container">
+       		<div class="box">
+       			<h3>Grocery<i class="fa fa-shopping-basket"></i></h3>
+       			<p>Feel free to follow us on social media handles.</p>
+       			<div class="share">
+       				<a href="#" class="fa fa-facebook"></a>
+       				<a href="#" class="fa fa-twitter"></a>
+       				<a href="#" class="fa fa-instagram"></a>
+       				<a href="#" class="fa fa-linkedin"></a>
+       			</div>
+       		</div>
+
+            <div class="box">
+       			<h3>Contact Info</h3>
+       			<a href="#" class="links"><i class="fa fa-phone"></i>+91 8888976543 </a>
+       			<a href="#" class="links"><i class="fa fa-phone"></i>+91 1112223333 </a>
+       			<a href="#" class="links"><i class="fa fa-envelope"></i>grocery@gmail.com </a>
+       			<a href="#" class="links"><i class="fa fa-map-marker"></i>Mumbai ,India-410200. </a>
+       		</div>
+
+       		<div class="box">
+       			<h3>Quick Links</h3>
+       			<a href="#home" class="links"><i class="fa fa-arrow-right"></i>Home </a>
+       			<a href="#features" class="links"><i class="fa fa-arrow-right"></i>Features </a>
+       			<a href="#products" class="links"><i class="fa fa-arrow-right"></i>Products </a>
+       			<a href="#categories" class="links"><i class="fa fa-arrow-right"></i>Categories </a>
+       			<a href="#review" class="links"><i class="fa fa-arrow-right"></i>Reviews </a>
+       			<a href="#blog" class="links"><i class="fa fa-arrow-right"></i>Blogs </a>
+       			
+       		</div>
+
+
+
+       	</div>
+       </section>
+
+
+
+	<!-- link js file -->
+	<script src="js/script.js"></script>
+
+	<!-- swiper js file -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+	<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.css"></script> -->
+
+</body>
+</html>
+
+
+
+
+
