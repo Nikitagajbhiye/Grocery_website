@@ -15,8 +15,8 @@
 
 	<!-- swiper cdn link -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> 
-
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -429,6 +429,60 @@
     </div>
   </section>
 
+  <!-- swiper demo section -->
+ <!--  <section class="slider_container">
+  	<div class="container">
+  		<div class="swiper card_slider">
+  			<div class="swiper-wrapper">
+  				<div class="swiper-slide">
+  					<div class="img-box">
+  						<img src="image/product-1.png">
+  					</div>
+  				</div>
+
+  				<div class="swiper-slide">
+  					<div class="img-box">
+  						<img src="image/product-2.png">
+  					</div>
+  				</div>
+
+  				<div class="swiper-slide">
+  					<div class="img-box">
+  						<img src="image/product-7.png">
+  					</div>
+  				</div>
+
+  				<div class="swiper-slide">
+  					<div class="img-box">
+  						<img src="image/product-3.jpg">
+  					</div>
+  				</div>
+
+  				<div class="swiper-slide">
+  					<div class="img-box">
+  						<img src="image/product-4.jpg">
+  					</div>
+  				</div>
+
+  				<div class="swiper-slide">
+  					<div class="img-box">
+  						<img src="image/product-2.png">
+  					</div>
+  				</div>
+
+  				<div class="swiper-slide">
+  					<div class="img-box">
+  						<img src="image/product-1.png">
+  					</div>
+  				</div>
+  			</div>
+  			<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+  			<div class="swiper-pagination"></div>
+  		</div>
+  	</div>
+  </section> -->
+
 
   <!-- footer section -->
        <section class="footer">
@@ -474,8 +528,82 @@
 	<script src="js/script.js"></script>
 
 	<!-- swiper js file -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  -->
 	<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.css"></script> -->
+	 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+	  <!-- Initialize Swiper -->
+  <script>
+
+   var swiper = new Swiper(".product-slider", {
+      loop:true,
+      spaceBetween: 20,
+      autoplay: {
+      	delay: 7500,
+      	disableOnInteraction: false,
+      },
+      
+       breakpoints: {
+         0: {
+           slidesPerView: 1,
+         },
+         768: {
+           slidesPerView: 2,
+         },
+         1020: {
+           slidesPerView: 3,
+         },
+     },
+    });
+
+
+   
+var swiper = new Swiper(".review-slider", {
+      loop:true,
+      spaceBetween: 20,
+      autoplay: {
+      	delay: 7500,
+      	disableOnInteraction: false,
+      },
+      
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1020: {
+          slidesPerView: 3,
+        },
+      },
+    });
+
+
+
+    // var swiper = new Swiper(".card_slider", {
+    //   slidesPerView: 3,
+    //   spaceBetween: 30,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    //   // breakpoints: {
+    //   //   362: {
+    //   //     slidesPerView: 1,
+    //   //             },
+    //   //   768: {
+    //   //     slidesPerView: 3,
+    //   //   },
+    //   //   1200: {
+    //   //     slidesPerView: 4,
+    //   //   },
+    // });
+  </script>
 
 </body>
 </html>

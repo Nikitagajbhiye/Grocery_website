@@ -426,12 +426,10 @@ section
 /*review*/
 
 .review .review-slider {
-  border: 1px solid;
   padding: 8px;
 }
 
 .review .review-slider .box {
-    border: 0px solid red;
 	background: #fff;
 	border-radius: 5px;
 	text-align: center;	
@@ -472,7 +470,6 @@ section
 /*blogs*/
 
 .blog .box-container {
- border: 0px solid;
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
  gap: 30px;
